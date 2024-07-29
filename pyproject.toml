@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=67.0", "wheel>=0.38.4"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "miqc_py"
+version = "0.0.1"
+authors = [
+  { name="Mark Keller", email="mark_keller@hms.harvard.edu" },
+]
+description = "Python implementation of miQC method"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+keywords = ["single-cell", "quality-control", "scverse"]
+classifiers = [
+  'Development Status :: 4 - Beta',
+  'Intended Audience :: Science/Research',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: 3.12',
+]
+dependencies = [
+  'pandas',
+  'numpy',
+  'anndata>=0.7.8,<0.11',
+  'scanpy>=1.9.3',
+  'stepmix==2.2.1'
+]
+
+[project.optional-dependencies]
+dev = [
+  'build==0.1.0',
+  'pytest>=6.2.4',
+  'flake8==3.8.4',
+]
+
+[project.urls]
+repository = "https://github.com/keller-mark/miqc-py"
+
+# Reference: https://stackoverflow.com/a/74421415
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Reference: https://stackoverflow.com/a/50156706
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
