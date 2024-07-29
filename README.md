@@ -1,6 +1,6 @@
 # miqc-py
 
-Python implementation of https://github.com/greenelab/miQC.
+Python implementation of [miQC](https://github.com/greenelab/miQC) ([paper](https://doi.org/10.1371/journal.pcbi.1009290)).
 
 ## Installation
 
