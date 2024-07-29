@@ -1,5 +1,7 @@
 # miqc-py
 
+[![PyPI](https://img.shields.io/pypi/v/miqc_py)](https://pypi.org/project/miqc_py)
+
 Python implementation of [miQC](https://github.com/greenelab/miQC) ([paper](https://doi.org/10.1371/journal.pcbi.1009290)).
 
 ## Installation
