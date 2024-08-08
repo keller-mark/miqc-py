@@ -26,7 +26,6 @@ dependencies = [
   'pandas',
   'numpy',
   'anndata>=0.7.8,<0.11',
-  'scanpy',
   'stepmix==2.2.1'
 ]
 
