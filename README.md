@@ -21,7 +21,7 @@ import miqc_py
 # ...
 
 miqc_py.calculate_miqc(adata)
-miqc_py.filter_cells(adata)
+miqc_py.filter_miqc(adata)
 ```
 
 ### Plotting
